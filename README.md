@@ -4,9 +4,6 @@
 
 <br/>
 
-<a href="#">
-  <img align="right" src="portrait.jpg" width="300" style="border-radius: 10px;" />
-</a>
 
 ```yaml
 - Damarasinghu Harshavardhan ----------------------------------
