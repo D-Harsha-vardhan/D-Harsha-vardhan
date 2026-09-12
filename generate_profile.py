@@ -189,17 +189,17 @@ def generate_animated_svg(points, dark_mode=True):
     num_intro_groups = 60
     intro_indices = np.random.randint(0, num_intro_groups, size=len(points))
     
-    svg = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610">\\n'
-    svg += f'    <rect width="1180" height="610" rx="10" fill="{palette["bg"]}" />\\n'
-    svg += f'    <rect x="0" y="0" width="1180" height="40" rx="10" fill="{palette["bg"]}" />\\n'
-    svg += '    <circle cx="20" cy="20" r="6" fill="#EF4444" />\\n'
-    svg += '    <circle cx="40" cy="20" r="6" fill="#F59E0B" />\\n'
-    svg += '    <circle cx="60" cy="20" r="6" fill="#10B981" />\\n'
-    svg += f'    <text x="590" y="25" fill="{palette["text"]}" font-family="monospace" font-size="14" text-anchor="middle">profile.sh --live</text>\\n'
-    svg += f'    <rect x="40" y="70" width="400" height="500" fill="none" stroke="{palette["chrome"]}" stroke-width="1" rx="4" />\\n'
-    svg += f'    <text x="50" y="90" fill="{palette["chrome"]}" font-family="monospace" font-size="12">VISUAL.MAP</text>\\n'
+    svg = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610">\n'
+    svg += f'    <rect width="1180" height="610" rx="10" fill="{palette["bg"]}" />\n'
+    svg += f'    <rect x="0" y="0" width="1180" height="40" rx="10" fill="{palette["bg"]}" />\n'
+    svg += '    <circle cx="20" cy="20" r="6" fill="#EF4444" />\n'
+    svg += '    <circle cx="40" cy="20" r="6" fill="#F59E0B" />\n'
+    svg += '    <circle cx="60" cy="20" r="6" fill="#10B981" />\n'
+    svg += f'    <text x="590" y="25" fill="{palette["text"]}" font-family="monospace" font-size="14" text-anchor="middle">profile.sh --live</text>\n'
+    svg += f'    <rect x="40" y="70" width="400" height="500" fill="none" stroke="{palette["chrome"]}" stroke-width="1" rx="4" />\n'
+    svg += f'    <text x="50" y="90" fill="{palette["chrome"]}" font-family="monospace" font-size="12">VISUAL.MAP</text>\n'
     
-    svg += '    <g transform="translate(90, 140)">\\n'
+    svg += '    <g transform="translate(90, 140)">\n'
     
     # --- ANIMATION TIMINGS (14.2s total) ---
     # 0s - 3.0s: Portrait holds
@@ -212,18 +212,18 @@ def generate_animated_svg(points, dark_mode=True):
     dur = 14.2
     
     # Intro Layer
-    svg += '        <!-- INTRO LAYER -->\\n'
+    svg += '        <!-- INTRO LAYER -->\n'
     for i in range(num_intro_groups):
         pts = points[intro_indices == i]
         if len(pts) == 0: continue
         path = build_path(pts)
         fade_dur = 1.0 + random.random() * 1.0 # fade over 1-2s
-        svg += f'        <path d="{path}" stroke="{palette["portrait"]}" stroke-width="1" shape-rendering="crispEdges" opacity="0">\\n'
-        svg += f'            <animate attributeName="opacity" values="0;1" dur="{fade_dur}s" fill="freeze" />\\n'
-        svg += '        </path>\\n'
+        svg += f'        <path d="{path}" stroke="{palette["portrait"]}" stroke-width="1" shape-rendering="crispEdges" opacity="0">\n'
+        svg += f'            <animate attributeName="opacity" values="0;1" dur="{fade_dur}s" fill="freeze" />\n'
+        svg += '        </path>\n'
 
     # Animated Loop Layer (Drift Bands)
-    svg += '        <!-- DRIFT BANDS -->\\n'
+    svg += '        <!-- DRIFT BANDS -->\n'
     for i in range(num_bands):
         pts = points[band_indices == i]
         if len(pts) == 0: continue
@@ -241,31 +241,31 @@ def generate_animated_svg(points, dark_mode=True):
         trans_vals = f"0,0; 0,0; {dx},{dy}; {dx},{dy}; {dx},{dy}; {dx},{dy}; {dx},{dy}; 0,0; 0,0"
         key_times = "0; 0.211; 0.303; 0.444; 0.535; 0.676; 0.768; 0.860; 1.0"
         
-        svg += f'        <g stroke="{palette["portrait"]}" stroke-width="1" shape-rendering="crispEdges">\\n'
-        svg += f'            <animateTransform attributeName="transform" type="translate" values="{trans_vals}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\\n'
-        svg += f'            <animate attributeName="opacity" values="{opac_vals}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\\n'
-        svg += f'            <path d="{path}" />\\n'
-        svg += '        </g>\\n'
+        svg += f'        <g stroke="{palette["portrait"]}" stroke-width="1" shape-rendering="crispEdges">\n'
+        svg += f'            <animateTransform attributeName="transform" type="translate" values="{trans_vals}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\n'
+        svg += f'            <animate attributeName="opacity" values="{opac_vals}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\n'
+        svg += f'            <path d="{path}" />\n'
+        svg += '        </g>\n'
 
     # Travellers Morph
-    svg += '        <!-- TRAVELLERS -->\\n'
+    svg += '        <!-- TRAVELLERS -->\n'
     morph_values = f"{traveller_d_portrait}; {traveller_d_portrait}; {traveller_d_logo1}; {traveller_d_logo1}; {traveller_d_logo2}; {traveller_d_logo2}; {traveller_d_portrait}; {traveller_d_portrait}; {traveller_d_portrait}"
     opac_vals = "0; 0; 1; 1; 1; 1; 1; 0; 0"
     key_times = "0; 0.211; 0.303; 0.444; 0.535; 0.676; 0.768; 0.860; 1.0"
     
-    svg += f'        <path stroke="{palette["portrait"]}" stroke-width="1" shape-rendering="crispEdges" opacity="0">\\n'
-    svg += f'            <animate attributeName="d" values="{morph_values}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\\n'
-    svg += f'            <animate attributeName="opacity" values="{opac_vals}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\\n'
-    svg += '        </path>\\n'
+    svg += f'        <path stroke="{palette["portrait"]}" stroke-width="1" shape-rendering="crispEdges" opacity="0">\n'
+    svg += f'            <animate attributeName="d" values="{morph_values}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\n'
+    svg += f'            <animate attributeName="opacity" values="{opac_vals}" keyTimes="{key_times}" dur="{dur}s" repeatCount="indefinite" />\n'
+    svg += '        </path>\n'
     
-    svg += '    </g>\\n'
+    svg += '    </g>\n'
     
-    svg += f'    <text x="480" y="90" fill="{palette["chrome"]}" font-family="monospace" font-size="13">SYSTEM.INFO</text>\\n'
-    svg += f'    <rect x="980" y="78" width="150" height="20" rx="10" fill="{palette["chrome"]}" opacity="0.2" />\\n'
-    svg += f'    <text x="1055" y="92" fill="{palette["chrome"]}" font-family="monospace" font-size="12" text-anchor="middle">@D-Harsha-vardhan</text>\\n'
-    svg += '    <circle cx="1145" cy="88" r="4" fill="#EF4444">\\n'
-    svg += '        <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />\\n'
-    svg += '    </circle>\\n'
+    svg += f'    <text x="480" y="90" fill="{palette["chrome"]}" font-family="monospace" font-size="13">SYSTEM.INFO</text>\n'
+    svg += f'    <rect x="980" y="78" width="150" height="20" rx="10" fill="{palette["chrome"]}" opacity="0.2" />\n'
+    svg += f'    <text x="1055" y="92" fill="{palette["chrome"]}" font-family="monospace" font-size="12" text-anchor="middle">@D-Harsha-vardhan</text>\n'
+    svg += '    <circle cx="1145" cy="88" r="4" fill="#EF4444">\n'
+    svg += '        <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />\n'
+    svg += '    </circle>\n'
     
     rows = [
         ("Subject", "Damarasinghu Harshavardhan"),
@@ -283,13 +283,13 @@ def generate_animated_svg(points, dark_mode=True):
     
     y_pos = 140
     for label, value in rows:
-        svg += f'    <text x="480" y="{y_pos}" fill="{palette["text"]}" font-family="monospace" font-size="14" textLength="100" lengthAdjust="spacingAndGlyphs">{label}</text>\\n'
+        svg += f'    <text x="480" y="{y_pos}" fill="{palette["text"]}" font-family="monospace" font-size="14" textLength="100" lengthAdjust="spacingAndGlyphs">{label}</text>\n'
         dots = '.' * max(5, 75 - len(label) - len(value))
-        svg += f'    <text x="590" y="{y_pos}" fill="{palette["text"]}" font-family="monospace" font-size="14">{dots}</text>\\n'
-        svg += f'    <text x="1140" y="{y_pos}" fill="{palette["text_bright"]}" font-family="monospace" font-size="14" text-anchor="end">{value}</text>\\n'
+        svg += f'    <text x="590" y="{y_pos}" fill="{palette["text"]}" font-family="monospace" font-size="14">{dots}</text>\n'
+        svg += f'    <text x="1140" y="{y_pos}" fill="{palette["text_bright"]}" font-family="monospace" font-size="14" text-anchor="end">{value}</text>\n'
         y_pos += 35
         
-    svg += '</svg>\\n'
+    svg += '</svg>\n'
     return svg
 
 def main():
