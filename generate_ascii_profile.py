@@ -70,7 +70,7 @@ def generate_svg(ascii_art, dark_mode=True):
         f"<tspan fill='{green_color}'>Damarasinghu</tspan>@<tspan fill='{accent_color}'>Harshavardhan</tspan>",
         "-----------------------------",
         f"<tspan fill='{accent_color}'>OS:</tspan> ................ Windows 11 / Linux",
-        f"<tspan fill='{accent_color}'>Role:</tspan> .............. AI/ML & Full-Stack Developer",
+        f"<tspan fill='{accent_color}'>Role:</tspan> .............. AI/ML &amp; Full-Stack Developer",
         f"<tspan fill='{accent_color}'>Location:</tspan> .......... India",
         f"<tspan fill='{accent_color}'>Education:</tspan> ......... Computer Science Engineering",
         f"<tspan fill='{accent_color}'>Status:</tspan> ............ Student",
