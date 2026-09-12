@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/D-Harsha-vardhan/D-Harsha-vardhan/main/dark.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/D-Harsha-vardhan/D-Harsha-vardhan/main/light.svg?v=1">
-  <img alt="Damarasinghu Harshavardhan" src="https://raw.githubusercontent.com/D-Harsha-vardhan/D-Harsha-vardhan/main/light.svg?v=1">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/D-Harsha-vardhan/D-Harsha-vardhan/main/ascii_dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/D-Harsha-vardhan/D-Harsha-vardhan/main/ascii_light.svg?v=1">
+  <img alt="Damarasinghu Harshavardhan" src="https://raw.githubusercontent.com/D-Harsha-vardhan/D-Harsha-vardhan/main/ascii_light.svg?v=1">
 </picture>
 
 <br/><br/>
