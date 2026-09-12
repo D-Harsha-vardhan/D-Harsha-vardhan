@@ -4,24 +4,24 @@
     <circle cx="40" cy="20" r="6" fill="#F59E0B" />
     <circle cx="60" cy="20" r="6" fill="#10B981" />
     <g font-family="Consolas, monospace" font-size="14" fill="#24292F" xml:space="preserve">
-        <text x="30" y="60">M$$$@@B$$&kb#@@ozrxk#qLQQJLmZwwb8QXak/^|i?nwZdqYCj>]Uz\}(?_+</text>
-        <text x="30" y="76">|b@$$$$kx_::l1ZW0xU&$$$#kWMohqmmpZZkpu\nirv-)zu0nI,lXt?_-?~></text>
-        <text x="30" y="92">+(vncCL|+-;. `>zcrUo%Br"^(wXvxvUmWwCwJ*m0vrx)`:jj)({x(+]~~_></text>
-        <text x="30" y="108">fxujr11]_1t1]_;ltrvuv_ :<^    ..,t+1ZYvucjnqLCXt//fxrtx/|{]_</text>
-        <text x="30" y="124">[|}|X/+!<+_1}:.!jtXJv.`Ii "+-)t|lI<>!]+])1fvxY|>>ii>}1\|}{){</text>
-        <text x="30" y="140">_~[rX\tt(]]Yzv{_xjXJY""`{YuX\)//),I~11[<>>?((?+-][][|))?~<<?</text>
-        <text x="30" y="156">CXCJJXJZOLmwJLYzOOJnn~<!fpu[!-11)>>_+iiI""!~++_<<~~~]<;^",:i</text>
-        <text x="30" y="172">0U0QmJnuYCCCXzUYLZmf]?_|Lc{(i_1x-__>~--I".^::,li>i>+!Il"^;i,</text>
-        <text x="30" y="188">txzvuXUvYnzuctnrcnU],!;>{~ /Znxb\!<~+~1)[]ux{+_++-[[_+~<>l>></text>
-        <text x="30" y="204">fxff//rvvxxvnxjfxuuiII,^ `";#*d@Z;!I,"-1])ftOJrrjjxuXCLJYYJX</text>
-        <text x="30" y="220">\t(/ff||\nt|(/r{{\(;,:"^.'"'Y$W%&<;;,""l-)\)jQXccvzYczYJuntt</text>
-        <text x="30" y="236">1|1[]?[}}(|1[(|[)]l:^^'.''".{%88B?":,'`-ftuXxjt(\|t/()(()({t</text>
-        <text x="30" y="252">l>_~i+}1{|\1>{\\zi ^...."^,^!&%%8-^:" .:fXt|xnf[tf|nxfxu)1fx</text>
-        <text x="30" y="268">fjnjnUcuccjcntuxrj~;+!  ^,,,^p@&8{ ::'.'<JnruzCrfrxcu\rn]_/r</text>
-        <text x="30" y="284">QQnncxnn|\(|\[{)+?}ft" '^,::,b$$$p".'^:")cnnurrr|\j|\|fnnzXU</text>
-        <text x="30" y="300">u)+-[1[?~!l-({[}?-)[' ''^,:"iCZQC0- .l:i/}jt|(|\jrcXJCLLCUYX</text>
-        <text x="30" y="316">i>i><+[[-?)[I<_?_l<^.`^^^,;,:l!l;,"^I!l[{tvXYCCJCJJYXzYvxcvc</text>
-        <text x="30" y="332">i~<<-+[?[?-<!li_?{!`^`^"",;;"",;;l!!~~rCLLLCCJUUXvnxcccQCYYY</text>
+        <text x="30" y="60">M$$$@@B$$&amp;kb#@@ozrxk#qLQQJLmZwwb8QXak/^|i?nwZdqYCj&gt;]Uz\}(?_+</text>
+        <text x="30" y="76">|b@$$$$kx_::l1ZW0xU&amp;$$$#kWMohqmmpZZkpu\nirv-)zu0nI,lXt?_-?~&gt;</text>
+        <text x="30" y="92">+(vncCL|+-;. `&gt;zcrUo%Br&quot;^(wXvxvUmWwCwJ*m0vrx)`:jj)({x(+]~~_&gt;</text>
+        <text x="30" y="108">fxujr11]_1t1]_;ltrvuv_ :&lt;^    ..,t+1ZYvucjnqLCXt//fxrtx/|{]_</text>
+        <text x="30" y="124">[|}|X/+!&lt;+_1}:.!jtXJv.`Ii &quot;+-)t|lI&lt;&gt;!]+])1fvxY|&gt;&gt;ii&gt;}1\|}{){</text>
+        <text x="30" y="140">_~[rX\tt(]]Yzv{_xjXJY&quot;&quot;`{YuX\)//),I~11[&lt;&gt;&gt;?((?+-][][|))?~&lt;&lt;?</text>
+        <text x="30" y="156">CXCJJXJZOLmwJLYzOOJnn~&lt;!fpu[!-11)&gt;&gt;_+iiI&quot;&quot;!~++_&lt;&lt;~~~]&lt;;^&quot;,:i</text>
+        <text x="30" y="172">0U0QmJnuYCCCXzUYLZmf]?_|Lc{(i_1x-__&gt;~--I&quot;.^::,li&gt;i&gt;+!Il&quot;^;i,</text>
+        <text x="30" y="188">txzvuXUvYnzuctnrcnU],!;&gt;{~ /Znxb\!&lt;~+~1)[]ux{+_++-[[_+~&lt;&gt;l&gt;&gt;</text>
+        <text x="30" y="204">fxff//rvvxxvnxjfxuuiII,^ `&quot;;#*d@Z;!I,&quot;-1])ftOJrrjjxuXCLJYYJX</text>
+        <text x="30" y="220">\t(/ff||\nt|(/r{{\(;,:&quot;^.&#x27;&quot;&#x27;Y$W%&amp;&lt;;;,&quot;&quot;l-)\)jQXccvzYczYJuntt</text>
+        <text x="30" y="236">1|1[]?[}}(|1[(|[)]l:^^&#x27;.&#x27;&#x27;&quot;.{%88B?&quot;:,&#x27;`-ftuXxjt(\|t/()(()({t</text>
+        <text x="30" y="252">l&gt;_~i+}1{|\1&gt;{\\zi ^....&quot;^,^!&amp;%%8-^:&quot; .:fXt|xnf[tf|nxfxu)1fx</text>
+        <text x="30" y="268">fjnjnUcuccjcntuxrj~;+!  ^,,,^p@&amp;8{ ::&#x27;.&#x27;&lt;JnruzCrfrxcu\rn]_/r</text>
+        <text x="30" y="284">QQnncxnn|\(|\[{)+?}ft&quot; &#x27;^,::,b$$$p&quot;.&#x27;^:&quot;)cnnurrr|\j|\|fnnzXU</text>
+        <text x="30" y="300">u)+-[1[?~!l-({[}?-)[&#x27; &#x27;&#x27;^,:&quot;iCZQC0- .l:i/}jt|(|\jrcXJCLLCUYX</text>
+        <text x="30" y="316">i&gt;i&gt;&lt;+[[-?)[I&lt;_?_l&lt;^.`^^^,;,:l!l;,&quot;^I!l[{tvXYCCJCJJYXzYvxcvc</text>
+        <text x="30" y="332">i~&lt;&lt;-+[?[?-&lt;!li_?{!`^`^&quot;&quot;,;;&quot;&quot;,;;l!!~~rCLLLCCJUUXvnxcccQCYYY</text>
         <text x="520" y="100"><tspan fill='#1A7F37'>Damarasinghu</tspan>@<tspan fill='#0969DA'>Harshavardhan</tspan></text>
         <text x="520" y="120">-----------------------------</text>
         <text x="520" y="140"><tspan fill='#0969DA'>OS:</tspan> ................ Windows 11 / Linux</text>

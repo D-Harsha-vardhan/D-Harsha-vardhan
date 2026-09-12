@@ -1,5 +1,6 @@
 import os
 import sys
+import html
 from PIL import Image, ImageEnhance, ImageOps
 
 def image_to_ascii(img_path, cols=60, scale=0.5):
@@ -99,8 +100,8 @@ def generate_svg(ascii_art, dark_mode=True):
     # Draw ASCII Art
     y_pos = 60
     for line in lines:
-        # replace spaces with non-breaking spaces if needed, but xml:space="preserve" handles it
-        svg += f'        <text x="30" y="{y_pos}">{line}</text>\n'
+        escaped_line = html.escape(line)
+        svg += f'        <text x="30" y="{y_pos}">{escaped_line}</text>\n'
         y_pos += 16
         
     # Draw Info Text side-by-side
