@@ -1,8 +1,3 @@
-<div align="center">
-  <img width="100%" src="https://streak-stats.demolab.com/?user=D-Harsha-vardhan&hide_border=true&background=0A101F&stroke=3B82F6&ring=3B82F6&fire=10B981&currStreakLabel=10B981&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=3B82F6&card_width=1180" alt="streak" />
-</div>
-
-<br/>
 
 
 ```yaml
